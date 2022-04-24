@@ -66,6 +66,11 @@
                         @else
                         <a class="active" href="/profilecheck/{{Auth::user()->id}}">My profile</a>
                             <li class="nav-item dropdown">
+                            @if(Auth::user()->email='admin@admin.com')
+                                <a id="navbarDropdown" class="active" href="/makeevent" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    {{ Auth::user()->name }}
+                                </a>
+                                @else
                                 <a id="navbarDropdown" class="active" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }}
                                 </a>
@@ -76,12 +81,7 @@
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
-                                    @if(Auth::user()->email='admin@admin.com')
-    <a class="active" href="/makeevent"> Administrate Events</a>
-
-
-
-@endif
+                                   
 
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
