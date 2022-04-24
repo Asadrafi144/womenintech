@@ -74,6 +74,7 @@
                                 <a id="navbarDropdown" class="active" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }}
                                 </a>
+                                @endif
 
                                 
                                     <a class="active" href="{{ route('logout') }}"
