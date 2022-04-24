@@ -66,7 +66,7 @@
                         @else
                         <a class="active" href="/profilecheck/{{Auth::user()->id}}">My profile</a>
                             <li class="nav-item dropdown">
-                            @if(Auth::user()->email='admin@admin.com')
+                            @if(Auth::user()->email=="admin@admin.com")
                                 <a id="navbarDropdown" class="active" href="/makeevent" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }}
                                 </a>
