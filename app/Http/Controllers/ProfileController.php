@@ -153,7 +153,7 @@ public function profileupdate($id){
     }
     public  function addevent() {
         $event = new Event();
-        $event->name=request('name');
+        $event->title=request('name');
         $event->description=request('description');
         $event->date=request('location');
         $event->date=request('date');
