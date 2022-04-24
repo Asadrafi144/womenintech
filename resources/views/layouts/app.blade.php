@@ -43,13 +43,7 @@
 <a class="active" href="/contactus">Contact us</a>
 
 
-    @if(Auth::user()->email='admin@admin.com')
-    <a class="active" href="/makeevent"> Administrate Events</a>
-
-
-
-@endif
-
+    
 
 
 
@@ -82,6 +76,13 @@
                                                      document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
+                                    @if(Auth::user()->email='admin@admin.com')
+    <a class="active" href="/makeevent"> Administrate Events</a>
+
+
+
+@endif
+
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                                         @csrf
