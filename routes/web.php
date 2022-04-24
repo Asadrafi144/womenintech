@@ -23,6 +23,12 @@ Route::get('/', function () {
     
 });
 
+
+Route::get('/makeevent', function () {
+    return view('adminevent');
+    
+});
+
 Route::get('/survey', [SurveyController::class, 'index']); 
 
 Route::get('/home', function () {
@@ -35,6 +41,7 @@ Route::get('/viewsurvey', [SurveyController::class, 'viewsurvey']);
 Route::post('/profile', [ProfileController::class, 'saveprofile']);
 Route::post('/profileupdate/{id}', [ProfileController::class, 'profileupdate']);
 Route::post('/remove/{id}', [ProfileController::class, 'remove']);
+Route::post('/addevent', [ProfileController::class, 'addevent']);
 
 Route::get('/profile', function () {
     return view('profile');

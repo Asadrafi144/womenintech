@@ -151,4 +151,14 @@ public function profileupdate($id){
 
      return redirect('/');
     }
+    public  function addevent() {
+        $event = new Event();
+        $event->name=request('name');
+        $event->description=request('description');
+        $event->date=request('location');
+        $event->date=request('date');
+        $event->time=request('time');
+        $event->save();
+        return redirect('/');
+    }
 }

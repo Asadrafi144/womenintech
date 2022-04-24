@@ -40,8 +40,15 @@
 <a class="active" href="/viewprofile">All Profiles</a>
 <a class="active" href="/viewsurvey">All Surveys</a>
 <a class="active" href="/events">Events</a>
-<a class="active" href="/aboutus">About us</a>
 <a class="active" href="/contactus">Contact us</a>
+
+
+    @if(Auth::user()->email='admin@admin.com')
+    <a class="active" href="/makeevent"> Administrate Events</a>
+
+
+
+@endif
 
 
 
