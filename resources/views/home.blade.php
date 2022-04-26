@@ -13,7 +13,7 @@
 </h3></p>
   <p><h2>Meet the team below!</h2></p>
   <br>
-  
+
 <div class="aboutus">
    <div class="col-sm-4">
             <img class="rounded-circle" src="\pictures\wit1.jpg" alt="image" width="140" height="140">

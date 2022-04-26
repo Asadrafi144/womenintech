@@ -71,7 +71,7 @@
 
 </div>
 </div>
-  
+  <?php print_r(profiles);?>
 @endforeach
 
 
