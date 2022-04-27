@@ -19,12 +19,12 @@ class CreateSurveysTable extends Migration
             $table->string('name');
             $table->string('sex');
             $table->string('job');
-            $table->string('questionone');
-            $table->string('questiontwo');
-            $table->string('questionthree');
-            $table->string('questionfour');
-            $table->string('questionfive');
-            $table->string('questionsix');
+            $table->text('questionone');
+            $table->text('questiontwo');
+            $table->text('questionthree');
+            $table->text('questionfour');
+            $table->text('questionfive');
+            $table->text('questionsix');
         });
     }
 

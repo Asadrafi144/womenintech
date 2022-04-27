@@ -21,13 +21,13 @@ class CreateProfilesTable extends Migration
             $table->string('profilepic');
             $table->string('email');
             $table->string('name');
-            $table->string('job');
-            $table->string('motivation');
-            $table->string('education');
-            $table->string('experience');
-            $table->string('motivatetwo');
-            $table->string('future');
-            $table->string('advice');
+            $table->text('job');
+            $table->text('motivation');
+            $table->text('education');
+            $table->text('experience');
+            $table->text('motivatetwo');
+            $table->text('future');
+            $table->text('advice');
             $table->foreign('profileid')->references('id')->on('users')->onDelete('cascade');
         });
     }
